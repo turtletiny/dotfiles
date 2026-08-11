@@ -1,0 +1,87 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/sapphire_dg.png",
+    "type": "kitty",
+    "height": 8,
+    "width": 20,
+    "padding": {
+      "top": 1,
+      "left": 1
+    }
+  },
+  "general": {},
+  "display": {
+    "disableLinewrap": "false",
+    "separator": "",
+    "constants": [
+      // BACKGROUND CONSTANTS (Unused)
+      "\u001b[48;2;43;43;69m",
+      "\u001b[48;2;56;59;78m",
+      // {$3} - Prints right bar, then pulls cursor back exactly 34 cells over the blank space
+      "\u001b[90m                                  │\u001b[34D\u001b[39m"
+    ]
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "key": "{#90}╭─────────────╮",
+      "format": "{#90}╭──────────────────────────────────╮"
+    },
+    {
+      "type": "title",
+      "key": "{#90}│ {#38;5;120} PC        {#90}│{#90}│",
+      "format": "{$3}{user-name}@{#36}{host-name}"
+    },
+    {
+      "type": "os",
+      "key": "{#90}│ {#38;5;121} OS        {#90}│{#90}│",
+      "format": "{$3}{pretty-name}"
+    },
+    {
+      "type": "packages",
+      "key": "{#90}│ {#38;5;122}󰏖 Packages  {#90}│{#90}│",
+      "format": "{$3}{all}"
+    },
+    {
+      "type": "cpu",
+      "key": "{#90}│ {#38;5;117} CPU       {#90}│{#90}│",
+      "showPeCoreCount": true,
+      "temp": true,
+      "format": "{$3}{name} @ {freq-max}"
+    },
+    {
+      "type": "gpu",
+      "key": "{#90}│ {#38;5;147}󰢮 GPU       {#90}│{#90}│",
+      "detectionMethod": "auto",
+      "hideType": "none",
+      "temp": true,
+      "format": "{$3}{name}"
+    },
+    {
+      "type": "memory",
+      "key": "{#90}│ {#38;5;183} Memory    {#90}│{#90}│",
+      "format": "{$3}{used} / {total} ({percentage})"
+    },
+    {
+      "type": "wm",
+      "key": "{#90}│ {#38;5;213} WM        {#90}│{#90}│",
+      "format": "{$3}{pretty-name}"
+    },
+    {
+      "type": "terminal",
+      "key": "{#90}│ {#38;5;212} Terminal  {#90}│{#90}│",
+      "format": "{$3}{pretty-name"
+    },
+    {
+      "type": "shell",
+      "key": "{#90}│ {#38;5;211} Shell     {#90}│{#90}│",
+      "format": "{$3}{exe-name}"
+    },
+    {
+      "type": "custom",
+      "key": "{#90}╰─────────────╯",
+      "format": "{#90}╰──────────────────────────────────╯"
+    }
+  ]
+}
