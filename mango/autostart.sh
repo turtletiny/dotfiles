@@ -2,13 +2,8 @@
 
 set +e
 
-wlr-randr --output DP-2 --mode 2560x1440@239.992
-
-# Noctalia
-# qs -c noctalia-shell &
 noctalia &
 
-# password
 /usr/lib/polkit-kde-authentication-agent-1 >/dev/null 2>&1 &
 
 # portal
