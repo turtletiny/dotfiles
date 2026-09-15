@@ -15,5 +15,3 @@ wl-clip-persist --clipboard regular --reconnect-tries 0 >/dev/null 2>&1 &
 # clipboard content manager
 wl-paste --type text --watch cliphist store >/dev/null 2>&1 &
 
-# alt tab for mango
-wswitch --daemon >/dev/null 2>&1 &
