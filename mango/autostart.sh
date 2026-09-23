@@ -6,9 +6,6 @@ noctalia &
 
 /usr/lib/polkit-kde-authentication-agent-1 >/dev/null 2>&1 &
 
-# portal
-/usr/lib/xdg-desktop-portal-wlr  >/dev/null 2>&1 &
-
 # keep clipboard content
 wl-clip-persist --clipboard regular --reconnect-tries 0 >/dev/null 2>&1 &
 
